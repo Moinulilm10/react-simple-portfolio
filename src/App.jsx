@@ -1,3 +1,4 @@
+// import ContactForm from "./components/Contact/ContactForm";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Experience from "./components/experience/Experience";
@@ -14,6 +15,7 @@ function App() {
       <Experience />
       <Project />
       <Contact />
+      {/* <ContactForm /> */}
     </>
   );
 }

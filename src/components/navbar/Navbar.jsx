@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="mx-auto max-w-7xl">
+      <div className="sticky mx-auto max-w-7xl">
         <div className="flex justify-between w-5/6 mx-auto ">
           {/* Primary menu and logo */}
           <div className="flex items-center gap-16 my-12">
@@ -22,7 +22,7 @@ const Navbar = () => {
                 className="flex items-center gap-1 font-bold text-gray-700 "
               >
                 <PaperAirplaneIcon className="w-6 h-6 text-primary" />
-                <span>Paper.io</span>
+                <span>Mi.</span>
               </a>
             </div>
             {/* primary */}
