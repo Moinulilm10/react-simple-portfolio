@@ -4,7 +4,7 @@ import "../../styles/Navbar.css";
 
 const Banner = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-4 md:gap-8 p-28 md:p-56">
+    <div className="flex flex-col items-center justify-center gap-4 md:gap-8 custom-padding">
       <h1 className="text-[36px] md:text-[72px] text-[#1F1F1F] font-normal leading-[43.57px] md:leading-[79.2px]">
         Hi, I&apos;m Moinul Islam{" "}
         <span className="wave-emoji">{emoji("👋")}</span>

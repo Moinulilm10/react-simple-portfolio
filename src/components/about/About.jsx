@@ -3,13 +3,13 @@ import "../../styles/About.css";
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-10 md:gap-[50px] items-center bg-[#F2F2F2] about-me-padding">
+    <div className="flex flex-col gap-10 md:gap-[50px] items-center bg-[#F2F2F2] custom-padding">
       <div className="">
         <h3 className="text-[30px] md:text-[36px] font-normal leading-[36px] md:leading-[44px]">
           About Me
         </h3>
       </div>
-      <div className="flex sm:items-center flex-col-reverse gap-[30px] md:gap-[79px] md:flex-row">
+      <div className="flex items-center flex-col-reverse gap-[30px] md:gap-[79px] md:flex-row">
         <div className="w-[551px] h-[351px]">
           <p className="text-sm font-normal leading-6 text-left md:leading-8 md:text-base ">
             I&apos;m a passionate front-end developer with a strong foundation

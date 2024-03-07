@@ -37,3 +37,13 @@
   background: rgba(80, 79, 80, 0.911);
   border-radius: 12px;
 }
+
+.custom-padding {
+  padding: 120px 255px 120px 255px;
+}
+
+@media only screen and (max-width: 480px) {
+  .custom-padding {
+    padding: 60px 26px 80px 26px;
+  }
+}

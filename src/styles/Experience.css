@@ -1,0 +1,129 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+/* Navbar style start */
+.hidden {
+  display: none;
+}
+
+.button-style {
+  border: 1.5px solid rgb(193, 186, 186);
+  border-radius: 5px;
+  height: 28px;
+  text-align: center;
+  padding: 3px 5px;
+  margin: 5px;
+}
+
+.button-style:hover {
+  border: 1.5px solid rgb(93, 91, 91);
+}
+
+/* all button style end */
+
+/* Start experience page design */
+.experience-main-div {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.flex-container-experience {
+  display: flex;
+  margin-top: 30px;
+  position: relative;
+  height: auto;
+  gap: 50px;
+}
+
+.flex-container-experience article {
+  margin: 5px;
+  justify-content: center;
+}
+
+.flex-container-experience figure {
+  margin: 5px;
+  border-radius: 10px;
+  width: 500px;
+  overflow: hidden;
+}
+
+.flex-container-experience figure img {
+  width: 100%;
+}
+
+.vertical1 {
+  border-left: 2px solid rgba(0, 0, 0, 0.74);
+  height: 100%;
+  position: absolute;
+  left: 30%;
+}
+
+.flex-container-experience-div-1 {
+  flex: 30%;
+  padding: 10px;
+  text-align: right;
+}
+
+.flex-container-experience-ul-1 {
+  flex: 70%;
+  padding: 10px;
+}
+
+.flex-container-experience-ul-1 li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.vertical2 {
+  border-left: 2px solid rgba(0, 0, 0, 0.74);
+  height: 100%;
+  position: absolute;
+  left: 70%;
+}
+
+.flex-container-experience-div-2 {
+  flex: 30%;
+  padding: 10px;
+}
+
+.flex-container-experience-ul-2 {
+  flex: 70%;
+  padding: 10px;
+}
+
+.flex-container-experience-ul-2 li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .flex-container-experience {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vertical1 {
+    display: hidden;
+  }
+
+  .vertical2 {
+    display: hidden;
+  }
+
+  .flex-container-experience-div-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .vertical1 {
+    display: none;
+  }
+}
