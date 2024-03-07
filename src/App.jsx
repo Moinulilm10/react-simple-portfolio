@@ -1,4 +1,5 @@
-import Banner from "./components/BannerSection/Banner";
+import About from "./components/about/About";
+import Banner from "./components/hero/Banner";
 import Navbar from "./components/navbar/Navbar";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Navbar />
       <Banner />
+      <About />
     </>
   );
 }

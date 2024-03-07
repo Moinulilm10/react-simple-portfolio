@@ -1,0 +1,11 @@
+.about-me-padding {
+  padding: 120px;
+  /* padding: 120px 255px 120px 255px; */
+}
+
+.about-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  background-color: #c4c4c4;
+}
