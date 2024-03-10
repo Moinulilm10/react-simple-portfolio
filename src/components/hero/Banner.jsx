@@ -3,6 +3,13 @@ import { RxDoubleArrowDown } from "react-icons/rx";
 import "../../styles/Navbar.css";
 
 const Banner = () => {
+  const handleScrollDown = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="flex flex-col items-center justify-center gap-4 md:gap-8 custom-padding mt-[185px]">
       <h1 className="text-[36px] md:text-[72px] text-[#1F1F1F] font-normal leading-[43.57px] md:leading-[79.2px]">
@@ -12,7 +19,10 @@ const Banner = () => {
       <p className="text-[20px] md:text-[36px] text-[#000000] leading-[29.05px] font-light">
         I design and build things.
       </p>
-      <RxDoubleArrowDown className="w-8 h-8 mt-10 cursor-pointer" />
+      <RxDoubleArrowDown
+        className="w-8 h-8 mt-10 cursor-pointer animate-bounce"
+        onClick={handleScrollDown}
+      />
     </div>
   );
 };
