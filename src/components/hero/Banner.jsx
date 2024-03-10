@@ -18,5 +18,3 @@ const Banner = () => {
 };
 
 export default Banner;
-
-// 150px, 255px, 150px, 255px
