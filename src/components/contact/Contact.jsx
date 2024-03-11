@@ -9,6 +9,12 @@ const Contact = () => {
     setShowContactForm((prev) => !prev);
   };
 
+  /**
+   * Renders a contact section with a contact form and contact information.
+   *
+   * @returns {JSX.Element} The rendered contact section.
+   */
+
   return (
     <div className="contact-container">
       <div className="contact-header">
