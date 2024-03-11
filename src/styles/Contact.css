@@ -72,3 +72,15 @@
   justify-content: center;
   gap: 20px;
 }
+
+
+@media only screen and (max-width: 480px) {
+  .contact-title {
+    margin-left: -161px;
+    /* text-align: center; */
+  }
+
+  .half-width {
+    display: none;
+  }
+}

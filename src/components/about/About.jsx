@@ -10,7 +10,7 @@ const About = () => {
         </h3>
       </div>
       <div className="flex items-center flex-col-reverse gap-[30px] md:gap-[79px] md:flex-row">
-        <div className="w-[551px] h-[351px]">
+        <div className=" lg:w-[551px] lg:h-[351px]">
           <p className="text-sm font-normal leading-6 text-left md:leading-8 md:text-base ">
             I&apos;m a passionate front-end developer with a strong foundation
             in React.js, Tailwind CSS, and Next.js. I bring a blend of technical

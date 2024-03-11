@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 mt-[-92px]">
+    <section className="bg-white dark:bg-gray-900 ml-4 lg:ml-0 mt-[-92px]">
       <div className="max-w-screen-md px-4 py-8 mx-auto lg:py-16">
         <form action="#" className="space-y-8">
           <div>
