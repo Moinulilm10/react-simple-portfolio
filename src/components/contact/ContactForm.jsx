@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 ml-4 lg:ml-0 mt-[-92px]">
+    <section className="bg-white dark:bg-gray-900 ml-4 lg:ml-0 mt-[-70px]">
       <div className="max-w-screen-md px-4 py-8 mx-auto lg:py-16">
         <form action="#" className="space-y-8">
           <div>
@@ -49,7 +49,7 @@ const ContactForm = () => {
           </div>
           <button
             type="submit"
-            className="px-5 py-3 text-sm font-medium text-center text-[#1F1F1F] rounded-lg bg-red-500 sm:w-fit hover:bg-grey-800 focus:ring-4 focus:outline-none focus:ring-grey-300 dark:bg-[#9e9898] dark:hover:bg-grey-700 dark:focus:ring-grey-800"
+            className="px-5 py-3 text-sm font-medium text-center text-[#1F1F1F] rounded-lg bg-gray-300 sm:w-fit hover:bg-grey-800 focus:ring-4 focus:outline-none focus:ring-grey-300 dark:bg-[#9e9898] dark:hover:bg-grey-700 dark:focus:ring-grey-800"
           >
             Send message
           </button>

@@ -3,7 +3,7 @@ import "../../styles/About.css";
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-10 md:gap-[50px] items-center bg-[#F2F2F2] custom-padding">
+    <div className="flex flex-col gap-10 md:gap-[50px] items-center bg-[#F2F2F2] dark:bg-primary/[7%] custom-padding">
       <div className="">
         <h3 className="text-[30px] md:text-[36px] font-normal leading-[36px] md:leading-[44px]">
           About Me

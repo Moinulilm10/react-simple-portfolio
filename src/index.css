@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.dark {
+  @apply bg-[#171923] text-white
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,10 +16,6 @@
   outline: none;
   font-family: "Inter", sans-serif;
 }
-
-/* --------- */
-/*Scrollbar   */
-/* --------- */
 
 ::-webkit-scrollbar {
   width: 7px;

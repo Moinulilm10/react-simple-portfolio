@@ -23,13 +23,21 @@ const Contact = () => {
           </p>
           <p> could contact me with any available job opportunities.</p>
         </div>
-        <div className="contact-button" id="contact-button">
+        <div className="contact-button " id="contact-button">
           {showContactForm ? (
-            <button type="button" onClick={toggleContactForm}>
+            <button
+              type="button"
+              className="bg-primary/20"
+              onClick={toggleContactForm}
+            >
               Close
             </button>
           ) : (
-            <button type="button" onClick={toggleContactForm}>
+            <button
+              className="bg-primary/20"
+              type="button"
+              onClick={toggleContactForm}
+            >
               Write Message
             </button>
           )}

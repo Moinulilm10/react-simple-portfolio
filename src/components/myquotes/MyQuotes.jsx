@@ -56,7 +56,7 @@ const MyQuotes = () => {
   };
 
   return (
-    <div id="container">
+    <div className="container dark:bg-primary/[7%]">
       {isLoading ? (
         <LoadingSpinner />
       ) : (

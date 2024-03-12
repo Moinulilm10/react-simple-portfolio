@@ -5,26 +5,27 @@ import Contact from "./components/contact/Contact";
 import Experience from "./components/experience/Experience";
 import Footer from "./components/footer/Footer";
 import Banner from "./components/hero/Banner";
-import LoadingSpinner from "./components/loadingspinner/LoadingSpinner";
 import MyQuotes from "./components/myquotes/MyQuotes";
 import Navbar from "./components/navbar/Navbar";
 import Project from "./components/project/Project";
+import { ThemeContext } from "./context";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(false);
-  return isLoading ? (
-    <LoadingSpinner />
-  ) : (
+  const [darkMode, setDarkMode] = useState(false);
+  return (
     <>
-      <Navbar />
-      <Banner />
-      <MyQuotes />
-      <About />
-      <Experience />
-      <Project />
-      <Contact />
-      <Footer />
-      <LoadingSpinner />
+      <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
+        <div className={`w-full h-full ${darkMode ? "dark" : ""}`}>
+          <Navbar />
+          <Banner />
+          <MyQuotes />
+          <About />
+          <Experience />
+          <Project />
+          <Contact />
+          <Footer />
+        </div>
+      </ThemeContext.Provider>
     </>
   );
 }
