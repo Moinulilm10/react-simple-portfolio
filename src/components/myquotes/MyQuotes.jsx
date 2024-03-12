@@ -56,26 +56,30 @@ const MyQuotes = () => {
   };
 
   return (
-    <div className="container dark:bg-primary/[7%]">
-      {isLoading ? (
-        <LoadingSpinner />
-      ) : (
-        <>
-          <div id="text">
-            <p className={isPulse ? "animate-pulse ease-out duration-700" : ""}>
-              {quote.quote}
-            </p>
-          </div>
-          <div id="author">
-            <p>{quote.author}</p>
-          </div>
-          <div id="buttons">
-            <button onClick={handleClick} id="new-quote">
-              Next Quote
-            </button>
-          </div>
-        </>
-      )}
+    <div className="quote-container">
+      <div className="container dark:bg-primary/[7%]">
+        {isLoading ? (
+          <LoadingSpinner />
+        ) : (
+          <>
+            <div id="text">
+              <p
+                className={isPulse ? "animate-pulse ease-out duration-700" : ""}
+              >
+                {quote.quote}
+              </p>
+            </div>
+            <div id="author">
+              <p>{quote.author}</p>
+            </div>
+            <div id="buttons">
+              <button onClick={handleClick} id="new-quote">
+                Next Quote
+              </button>
+            </div>
+          </>
+        )}
+      </div>
     </div>
   );
 };

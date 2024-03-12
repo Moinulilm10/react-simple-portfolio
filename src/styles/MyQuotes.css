@@ -56,4 +56,8 @@
         font-size: 0.9rem;
         margin-bottom: 0.5rem;
     }
+
+    .quote-container {
+        padding: 12px;
+    }
 }
