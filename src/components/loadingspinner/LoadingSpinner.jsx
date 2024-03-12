@@ -1,5 +1,12 @@
+import "../../styles/LoadingSpinner.css";
 const LoadingSpinner = () => {
-  return <div>loading spinner</div>;
+  return (
+    <div className="lds-facebook">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  );
 };
 
 export default LoadingSpinner;
