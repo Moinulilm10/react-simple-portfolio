@@ -9,7 +9,10 @@ const Navbar = () => {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
 
   return (
-    <nav className="sticky flex flex-wrap items-center justify-between p-10 ">
+    <nav
+      style={{ position: "sticky" }}
+      className="sticky flex flex-wrap items-center justify-between p-10"
+    >
       <div className="flex items-center flex-shrink-0 mr-6  dark:bg-primary/[7%] lg:mr-20 md:ml-44">
         <p>Portfolio</p>
       </div>
