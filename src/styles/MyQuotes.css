@@ -1,9 +1,8 @@
 .container {
     background-color: white;
     box-shadow: 2px 2px 2px 2px rgb(150, 150, 151);
-    width: 62%;
     margin: 10rem auto;
-    padding: 3rem;
+    padding: 3rem 12rem 3rem 12rem;
     border-radius: 10px;
 }
 
