@@ -1,12 +1,12 @@
-import { useContext, useState } from "react";
-import moon from "../../assets/icons/moon.svg";
-import sun from "../../assets/icons/sun.svg";
-import { ThemeContext } from "../../context";
+import { useState } from "react";
+// import moon from "../../assets/icons/moon.svg";
+// import sun from "../../assets/icons/sun.svg";
+import { Link } from "react-router-dom";
 import "../../styles/Navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { darkMode, setDarkMode } = useContext(ThemeContext);
+  // const { darkMode, setDarkMode } = useContext(ThemeContext);
 
   return (
     <nav
@@ -14,7 +14,9 @@ const Navbar = () => {
       className="sticky flex flex-wrap items-center justify-between p-10"
     >
       <div className="flex items-center flex-shrink-0 mr-6  dark:bg-primary/[7%] lg:mr-20 md:ml-44">
-        <p>Portfolio</p>
+        <Link to="/">
+          <p>Portfolio</p>
+        </Link>
       </div>
       <div className="block lg:hidden">
         <button
@@ -43,30 +45,30 @@ const Navbar = () => {
         }`}
       >
         <div className="text-lg lg:flex-row md:ml-[110px] nav-link-list">
-          <a
-            href="#"
+          <Link
+            to="/about"
             className="block mt-4 mr-4 lg:inline-block lg:mt-0 text-white-200 md:ml-[25px]"
           >
             About
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/experience"
             className="block mt-4 mr-4 lg:inline-block lg:mt-0 text-white-200 md:ml-[25px]"
           >
             Experience
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/project"
             className="block mt-4 mr-4 lg:inline-block lg:mt-0 text-white-200 md:ml-[25px]"
           >
             Projects
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/contact"
             className="block mt-4 mr-4 lg:inline-block lg:mt-0 text-white-200 md:ml-[25px]"
           >
             Contact
-          </a>
+          </Link>
         </div>
         <div className="flex gap-2 mt-2 md:mr-24 md:mt-0">
           <button className="inline-flex items-center px-4 py-2 text-sm dark:bg-primary/[7%] border rounded hover:bg-[#dfdfdf] hover:border-none">
@@ -75,7 +77,7 @@ const Navbar = () => {
           <button className="inline-flex items-center px-4 py-2 text-sm  dark:bg-primary/[7%] border rounded hover:bg-[#dfdfdf] hover:border-none">
             Resume
           </button>
-          <div className=" ml-8 dark:bg-primary/[7%] bg-primary/20 rounded p-2">
+          {/* <div className=" ml-8 dark:bg-primary/[7%] bg-primary/20 rounded p-2">
             <a href="#" onClick={() => setDarkMode((darkMode) => !darkMode)}>
               <img
                 src={darkMode ? sun : moon}
@@ -84,7 +86,7 @@ const Navbar = () => {
                 alt="moon"
               />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

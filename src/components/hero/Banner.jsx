@@ -1,5 +1,6 @@
 import emoji from "react-easy-emoji";
 import { RxDoubleArrowDown } from "react-icons/rx";
+import { Link } from "react-router-dom";
 import "../../styles/Navbar.css";
 
 const Banner = () => {
@@ -23,6 +24,11 @@ const Banner = () => {
         className="w-8 h-8 mt-10 cursor-pointer animate-bounce"
         onClick={handleScrollDown}
       />
+      <Link to="/quotes">
+        <button className="px-4 py-2 font-semibold text-blue-700 bg-transparent border border-blue-500 rounded hover:bg-blue-500 hover:text-white hover:border-transparent">
+          Show Quotes
+        </button>
+      </Link>
     </div>
   );
 };
