@@ -7,9 +7,10 @@ const cors = require("@koa/cors");
 
 dotenv.config();
 
+const PORT = process.env.PORT;
+
 const router = new Router();
 const app = new Koa();
-const PORT = process.env.PORT;
 
 app.use(bodyParser());
 app.use(cors());
