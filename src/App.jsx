@@ -39,7 +39,7 @@ function App() {
         <Route path="/experience" element={<Experience />} />
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/backend" element={<DataFromBackend />} />
+        <Route path="/users" element={<DataFromBackend />} />
         <Route path="/user-create" element={<UserCreate />} />
         <Route path="*" element={<NotFoundPage />} />
         {/* </div> */}
