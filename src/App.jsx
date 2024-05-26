@@ -1,6 +1,8 @@
 // import ContactForm from "./components/Contact/ContactForm";
 import { Route, Routes } from "react-router-dom";
+import DataFromBackend from "./components/DataFromBackend/DataFromBackend";
 import NotFoundPage from "./components/NotFound/NotFound";
+import UserCreate from "./components/UserCreate";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Experience from "./components/experience/Experience";
@@ -37,6 +39,8 @@ function App() {
         <Route path="/experience" element={<Experience />} />
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/backend" element={<DataFromBackend />} />
+        <Route path="/user-create" element={<UserCreate />} />
         <Route path="*" element={<NotFoundPage />} />
         {/* </div> */}
       </Routes>
