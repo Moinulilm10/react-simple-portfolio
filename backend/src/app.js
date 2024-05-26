@@ -12,8 +12,8 @@ const PORT = process.env.PORT;
 const router = new Router();
 const app = new Koa();
 
-app.use(bodyParser());
 app.use(cors());
+app.use(bodyParser());
 
 router.use("", userRouter);
 
