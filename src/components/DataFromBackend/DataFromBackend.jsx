@@ -41,9 +41,6 @@ const DataFromBackend = () => {
                   <th className="p-3 font-bold text-gray-600 uppercase bg-gray-200 border border-gray-300">
                     Phone
                   </th>
-                  {/* <th className="p-3 font-bold text-gray-600 uppercase bg-gray-200 border border-gray-300">
-                    Actions
-                  </th> */}
                 </tr>
               </thead>
               <tbody>
@@ -70,23 +67,6 @@ const DataFromBackend = () => {
                       </span>
                       {user.phone}
                     </td>
-                    {/* <td className="relative block w-full p-3 text-center text-gray-800 border border-b lg:w-auto lg:table-cell lg:static">
-                      <span className="absolute top-0 left-0 px-2 py-1 text-xs font-bold uppercase bg-blue-200 lg:hidden">
-                        Actions
-                      </span>
-                      <a
-                        href="#"
-                        className="text-blue-400 underline hover:text-blue-600"
-                      >
-                        Edit
-                      </a>
-                      <a
-                        href="#"
-                        className="pl-6 text-blue-400 underline hover:text-blue-600"
-                      >
-                        Remove
-                      </a>
-                    </td> */}
                   </tr>
                 ))}
               </tbody>
