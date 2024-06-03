@@ -11,28 +11,13 @@ import Banner from "./components/hero/Banner";
 import MyQuotes from "./components/myquotes/MyQuotes";
 import Navbar from "./components/navbar/Navbar";
 import Project from "./components/project/Project";
-// import { ThemeContext } from "./context";
 
 function App() {
   // const [darkMode, setDarkMode] = useState(false);
   return (
     <>
-      {/* <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
-        <div className={`w-full h-full ${darkMode ? "dark" : ""}`}>
-          <Navbar />
-          <Banner />
-          <MyQuotes />
-          <About />
-          <Experience />
-          <Project />
-          <Contact />
-          <Footer />
-        </div>
-      </ThemeContext.Provider> */}
-      {/* <ThemeContext.Provider value={{ darkMode, setDarkMode }}> */}
       <Navbar />
       <Routes>
-        {/* <div className={`w-full h-full ${darkMode ? "dark" : ""}`}> */}
         <Route path="/" element={<Banner />} />
         <Route path="/quotes" element={<MyQuotes />} />
         <Route path="/about" element={<About />} />
@@ -42,10 +27,8 @@ function App() {
         <Route path="/users" element={<DataFromBackend />} />
         <Route path="/user-create" element={<UserCreate />} />
         <Route path="*" element={<NotFoundPage />} />
-        {/* </div> */}
       </Routes>
       <Footer />
-      {/* </ThemeContext.Provider> */}
     </>
   );
 }
